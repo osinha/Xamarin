@@ -48,7 +48,7 @@ namespace CustomerAppDroid.Views
         protected override void OnViewModelSet()
         {
             base.OnViewModelSet();
-            SetContentView(Resource.Layout.Customer);
+            this.SetContentView(Resource.Layout.Customer);
         }
 
         #endregion
