@@ -5,7 +5,7 @@ using Cirrious.MvvmCross.ViewModels;
 namespace CustomerAppDroid
 {
     /// <summary>
-    /// 
+    /// test
     /// </summary>
     public class Setup : MvxAndroidSetup
     {
