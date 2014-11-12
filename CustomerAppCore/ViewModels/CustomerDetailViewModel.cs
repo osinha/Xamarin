@@ -35,12 +35,12 @@ namespace CustomerAppCore.ViewModels
         {
             get
             {
-                return selectedCustomer;
+                return this.selectedCustomer;
             }
             set
             {
-                selectedCustomer = value;
-                this.RaisePropertyChanged(() => SelectedCustomer);
+                this.selectedCustomer = value;
+                this.RaisePropertyChanged(() => this.SelectedCustomer);
             }
         }
 
@@ -104,7 +104,7 @@ namespace CustomerAppCore.ViewModels
         /// </summary>
         private void GoBack()
         {
-            Close(this);
+            this.Close(this);
         }
 
         #endregion

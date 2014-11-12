@@ -40,7 +40,7 @@ namespace CustomerAppCore.ViewModels
             set
             {
                 this.customers = value;
-                this.RaisePropertyChanged(() => Customers);
+                this.RaisePropertyChanged(() => this.Customers);
             }
         }
 
@@ -59,7 +59,7 @@ namespace CustomerAppCore.ViewModels
             set
             {
                 this.selectedCustomer = value;
-                this.RaisePropertyChanged(() => SelectedCustomer);
+                this.RaisePropertyChanged(() => this.SelectedCustomer);
                 this.NavigateToDetailsPage(this.selectedCustomer.Id);
             }
         }
@@ -113,11 +113,10 @@ namespace CustomerAppCore.ViewModels
         /// <param name="id">The identifier.</param>
         private void NavigateToDetailsPage(uint id)
         {
-            ShowViewModel<CustomerDetailViewModel>(new IdParameter() { Id = id });
+            this.ShowViewModel<CustomerDetailViewModel>(new IdParameter() { Id = id });
         }
 
         #endregion
-
     }
 
     /// <summary>

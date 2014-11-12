@@ -31,8 +31,14 @@ namespace CustomerAppDAL.Model
         /// </value>
         public uint Id
         {
-            get { return id; }
-            set { id = value; }
+            get
+            {
+                return this.id;
+            }
+            set
+            {
+                this.id = value;
+            }
         }
 
         /// <summary>
@@ -43,8 +49,14 @@ namespace CustomerAppDAL.Model
         /// </value>
         public string ImageUri
         {
-            get { return imageUri; }
-            set { imageUri = value; }
+            get
+            {
+                return this.imageUri;
+            }
+            set
+            {
+                this.imageUri = value;
+            }
         }
 
         /// <summary>
@@ -55,8 +67,14 @@ namespace CustomerAppDAL.Model
         /// </value>
         public string Name
         {
-            get { return name; }
-            set { name = value; }
+            get
+            {
+                return this.name;
+            }
+            set
+            {
+                this.name = value;
+            }
         }
 
         /// <summary>
@@ -67,8 +85,14 @@ namespace CustomerAppDAL.Model
         /// </value>
         public string Address
         {
-            get { return address; }
-            set { address = value; }
+            get
+            {
+                return this.address;
+            }
+            set
+            {
+                this.address = value;
+            }
         }
 
         /// <summary>
@@ -79,8 +103,14 @@ namespace CustomerAppDAL.Model
         /// </value>
         public string Notes
         {
-            get { return notes; }
-            set { notes = value; }
+            get
+            {
+                return this.notes;
+            }
+            set
+            {
+                this.notes = value;
+            }
         }
 
         #endregion
